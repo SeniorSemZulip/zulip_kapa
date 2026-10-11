@@ -21042,6 +21042,16 @@ paths:
                           encoded as `null` instead of `-1`. Clients can correctly handle all
                           server versions by treating both `-1` and `null` as indicating
                           unlimited message retention.
+
+                      realm_my_fantastic_feature:
+                        type: boolean
+                        description: |
+                          Present if `realm` is present in `fetch_event_types`.
+
+                          Whether status emoji in this organization are shown upside down.
+
+                          **Changes**: New in Zulip 13.0 (feature level ZF-ae74d0).
+
                       realm_name:
                         type: string
                         description: |

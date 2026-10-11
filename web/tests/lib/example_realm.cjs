@@ -105,6 +105,7 @@ exports.make_realm = (opts = {}) => {
         realm_move_messages_between_streams_limit_seconds: null,
         realm_move_messages_within_stream_limit_seconds: null,
         realm_name_changes_disabled: false,
+        realm_my_fantastic_feature: false,
         realm_name: "",
         realm_new_stream_announcements_stream_id: 0,
         realm_night_logo_source: "",
