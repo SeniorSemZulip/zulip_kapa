@@ -338,6 +338,10 @@ export function initialize_kitchen_sink_stuff() {
         $("body").addClass("high-contrast");
     }
 
+    if (realm.realm_my_fantastic_feature) {
+        $("body").addClass("my-fantastic-feature");
+    }
+
     $(window).on("blur", () => {
         $(document.body).addClass("window_blurred");
     });

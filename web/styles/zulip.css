@@ -1480,6 +1480,10 @@ div.topic_edit_spinner .loading_indicator_spinner {
     margin-right: 0;
 }
 
+body.my-fantastic-feature .status-emoji {
+    transform: rotate(180deg);
+}
+
 #pw_strength {
     width: 100%;
     height: 10px;
