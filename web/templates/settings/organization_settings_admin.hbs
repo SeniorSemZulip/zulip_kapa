@@ -260,6 +260,12 @@
               label=admin_settings_label.realm_enable_read_receipts
               label_parens_text=admin_settings_label.realm_enable_read_receipts_parens_text}}
 
+            {{> settings_checkbox
+                setting_name="realm_my_fantastic_feature"
+                prefix="id_"
+                is_checked=realm_my_fantastic_feature
+                label=admin_settings_label.realm_my_fantastic_feature}}
+
             <div class="input-group">
                 <label for="id_realm_media_preview_size" class="settings-field-label">{{admin_settings_label.realm_media_preview_size}}</label>
                 <select name="realm_media_preview_size" id="id_realm_media_preview_size" class="prop-element settings_select bootstrap-focus-style" data-setting-widget-type="number">

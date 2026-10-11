@@ -86,6 +86,7 @@ const admin_settings_label = {
     realm_enable_read_receipts_parens_text: $t({
         defaultMessage: "Users can always disable their personal read receipts.",
     }),
+    realm_my_fantastic_feature: $t({defaultMessage: "Show status emoji upside down"}),
     realm_enable_guest_user_indicator: $t({
         defaultMessage: "Display “(guest)” after names of guest users",
     }),
@@ -287,6 +288,7 @@ export function build_page(): void {
         is_business_type_org:
             realm.realm_org_type === settings_config.all_org_type_values.business.code,
         realm_enable_read_receipts: realm.realm_enable_read_receipts,
+        realm_my_fantastic_feature: realm.realm_my_fantastic_feature,
         allow_sorting_deactivated_users_list_by_email:
             settings_users.allow_sorting_deactivated_users_list_by_email(),
         has_bots: bot_data.get_all_bots_for_current_user().length > 0,
