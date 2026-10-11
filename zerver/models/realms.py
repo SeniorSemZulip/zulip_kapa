@@ -261,6 +261,7 @@ class Realm(models.Model):
     name_changes_disabled = models.BooleanField(default=False)
     email_changes_disabled = models.BooleanField(default=False)
     avatar_changes_disabled = models.BooleanField(default=False)
+    my_fantastic_feature = models.BooleanField(default=False)
 
     welcome_message_custom_text = models.TextField(default="")
 
@@ -780,6 +781,7 @@ class Realm(models.Model):
         move_messages_between_streams_limit_seconds=int | None,
         move_messages_within_stream_limit_seconds=int | None,
         message_retention_days=int,
+        my_fantastic_feature=bool,
         name=str,
         name_changes_disabled=bool,
         push_notifications_enabled=bool,
